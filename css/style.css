@@ -1,4 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap');
+
+:root{
+    --main-color: #b93500;
+    --black: #13131a;
+    --bg: #F8EBD7;
+    --border: .1rem solid rgba(255,255,255,.3);
+}
+
 *{
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+    -webkit-transition: .2s linear;
+    -moz-transition: .2s linear;
+    -ms-transition: .2s linear;
+    -o-transition: .2s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+    -webkit-border-radius: 5rem;
+    -moz-border-radius: 5rem;
+    -ms-border-radius: 5rem;
+    -o-border-radius: 5rem;
+}
+
+body{
+    background: var(--bg);
+}
+
+section{
+    padding: 2rem 7%;
+}
+
+section .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.heading{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span{
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.btn{
+    background: #F79200;
+    padding: 8px 20px;
+    text-shadow: 0 1px 1px rgba(188,57,0,.8);
+    color: #fff;
+}
+
+.btn:hover{
+    background: #f3a939;
+}
+
+.btn2{
+    background: rgba(188,57,0,.8);
+    padding: 8px 20px;
+    text-shadow: 0 1px 1px rgba(188,57,0,.8);
+    color: #fff;
+}
+
+.btn2:hover{
+    background: rgba(236, 94, 33, 0.8);
+}
+
+/*
+====================
+header Section Style
+====================
+*/
+
+.header{
+    background:#EFD0B7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header .logo img{
+    height: 6rem;
+}
+
+.header .navbar a{
+    margin: 0 .5rem;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.header .navbar a:hover{
+    color: #fff;
+}
+
+/*
+====================
+Footer Section Style
+====================
+*/
+
+
+.footer{
+    background: #EFD0B7;
+    text-align: center;
+}
+
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+
+.footer .links a{
+    padding: .7rem .5rem;
+    color: var(--main-color);
+    font-size: 2rem;
+}
+
+
+.footer .creadit{
+    font-size: 1.7rem;
+    color: #444;
+    font-weight: lighter;
+    padding: 1rem;
+}
+
+.footer .creadit a{
+    color: var(--main-color);
 }
